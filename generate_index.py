@@ -12,7 +12,7 @@ import html
 import sys
 
 ROOT = Path(__file__).parent
-MANIFEST = ROOT / "packages.txt"
+MANIFESTS = [ROOT / "packages.txt", ROOT / "flash_attention.txt"]
 OUT = ROOT / "simple"
 
 NAME_URL_RE = re.compile(r"^\s*([^\s@]+)\s*@\s*(\S+)(?:\s*;[^#\n]*)?(?:\s*#(.*))?$")
@@ -69,14 +69,19 @@ def write_index(entries, outdir: Path):
 
 
 def main():
-    if not MANIFEST.exists():
-        print(f"Manifest {MANIFEST} not found.")
+    all_entries = []
+    for manifest in MANIFESTS:
+        if not manifest.exists():
+            print(f"Manifest {manifest} not found, skipping.")
+            continue
+        print(f"Processing {manifest}...")
+        entries = parse_manifest(manifest)
+        all_entries.extend(entries)
+
+    if not all_entries:
+        print("No entries found in any manifest.")
         return
-    entries = parse_manifest(MANIFEST)
-    if not entries:
-        print("No entries found in manifest.")
-        return
-    write_index(entries, OUT)
+    write_index(all_entries, OUT)
     print(f"Wrote simple index to: {OUT}")
 
 
