@@ -30,3 +30,4 @@ tts_webui_extension.vall_e_x @ https://github.com/rsxdalv/tts_webui_extension.va
 tts_webui_extension.stable_audio @ https://github.com/rsxdalv/tts_webui_extension.stable_audio/releases/download/v0.1.1/tts_webui_extension_stable_audio-0.1.1-py3-none-any.whl
 tts_webui_extension.ap_bwe @ https://github.com/rsxdalv/tts_webui_extension.ap_bwe/releases/download/v0.1.1/tts_webui_extension_ap_bwe-0.1.1-py3-none-any.whl
 tts_webui_extension.cosyvoice @ https://github.com/rsxdalv/tts_webui_extension.cosyvoice/releases/download/v0.1.7/tts_webui_extension_cosyvoice-0.1.7-py3-none-any.whl
+tts_webui_extension.acestep15 @ git+https://github.com/rsxdalv/tts_webui_extension.acestep15@tts-webui # MIT License
