@@ -1,4 +1,7 @@
 # Auto-generated from mjun0812/flash-attention-prebuild-wheels
+flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v1.1.0/flash_attn-2.8.4%2Brocm7.1torch2.13git4a948e9-cp310-cp310-linux_x86_64.whl ; sys_platform == 'linux' and python_version == '3.10'
+flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v1.1.0/flash_attn-2.8.4%2Brocm7.1torch2.13git4a948e9-cp311-cp311-linux_x86_64.whl ; sys_platform == 'linux' and python_version == '3.11'
+flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v1.1.0/flash_attn-2.8.4%2Brocm7.1torch2.13git4a948e9-cp314-cp314-linux_x86_64.whl ; sys_platform == 'linux' and python_version == '3.14'
 flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v1.0.0/flash_attn-2.8.4%2Brocm7.2torch2.14git4a948e9-cp310-cp310-linux_x86_64.whl ; sys_platform == 'linux' and python_version == '3.10'
 flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v1.0.0/flash_attn-2.8.4%2Brocm7.2torch2.14git4a948e9-cp311-cp311-linux_x86_64.whl ; sys_platform == 'linux' and python_version == '3.11'
 flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v1.0.0/flash_attn-2.8.4%2Brocm7.2torch2.14git4a948e9-cp312-cp312-linux_x86_64.whl ; sys_platform == 'linux' and python_version == '3.12'
